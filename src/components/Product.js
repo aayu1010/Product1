@@ -30,7 +30,7 @@ export default class Product extends Component {
                          {title}
                      </p>
                      <h5 className="text-blue font-italic mb-0">
-                         <span className="mr-1">$</span>
+                         <span className="mr-1">₹</span>
                          {price}
                      </h5>
                  </div>
@@ -74,9 +74,6 @@ const ProducrWrapper =styled.div`
 .card-img-top{
      transition:all 1s linear;
 }
-.img-container:hover .card-img-top{
-    transform:scale(1.2);
-}
 .cart-btn{
     position:absolute;
     bottom:0;
@@ -86,11 +83,9 @@ const ProducrWrapper =styled.div`
     color:var(--mainWhite);
     font-size:1.4rem;
     border-radius:0.5 rem 0 0 0;
-    transform:translate(100%, 100%);
-    transition:all 1s linear;
+
 }
-.img-container:hover .cart-btn{
-    transform:translate(0, 0);
+
 }
 .cart-btn:hover{
     color:var(--mainBlue);
